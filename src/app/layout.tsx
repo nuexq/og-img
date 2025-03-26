@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from 'next/font/local'
  
-const crimsonPro = localFont({ src: '../../public/fonts/CrimsonPro-VariableFont.ttf' })
+const crimsonPro = localFont({ src: './fonts/CrimsonPro-VariableFont.ttf' })
 
 export const metadata: Metadata = {
 	title: "og-img",
