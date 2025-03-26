@@ -11,7 +11,7 @@ export default function Page() {
 	const encodedTitle = encodeURIComponent(title);
 
 	return (
-		<div>
+		<html lang="en">
 			<Head>
 				<meta name="og:title" content={title} />
 				<meta name="og:description" content={title} />
@@ -22,6 +22,9 @@ export default function Page() {
 					}/api/og?title=${encodedTitle}`}
 				/>
 			</Head>
-		</div>
+			<body>
+				<h1>Hi!</h1>
+			</body>
+		</html>
 	);
 }
