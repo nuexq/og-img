@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import localFont from 'next/font/local'
+ 
+const crimsonPro = localFont({ src: '../../public/fonts/CrimsonPro-VariableFont.ttf' })
 
 export const metadata: Metadata = {
 	title: "og-img",
@@ -13,7 +16,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className="antialiased">{children}</body>
+			<body className={`${crimsonPro.className} antialiased`}>{children}</body>
 		</html>
 	);
 }
